@@ -117,6 +117,7 @@ body {
 
 .linkTxt {
   color: var(--secundary-color);
+  text-decoration: none;
 }
 
 a:visited {
