@@ -150,7 +150,19 @@ a:visited {
 /* ICON */
 
 .icon {
-  padding-top: 0.26rem;
+  margin-top: 0.26rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.iconup {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.icondown {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -270,89 +282,372 @@ a:visited {
 428: celular;
 */
 
-@media (max-width: 1300px) {
-  .header {
-    margin: 1rem 2rem;
+@media screen and (max-width: 1420px) {
+
+  @media screen and (min-width: 800px){
+    body {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  
+    .header {
+      margin: 1rem 2rem;
+    }
+  
+    .headerRight_side {
+      padding: 1rem;
+    }
+  
+    .description {
+      padding: 0rem;
+    }
+  
+    .description_box {
+      margin-right: 0rem;
+    }
+  
+    .gridContainer {
+      margin: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .borderbotton {
+      margin-right: 38rem;
+    }
+  
+    .rightSideText {
+      font-size: 1.5rem;
+    }
+  
+    .titleLeftSide {
+      font-size: 1.5rem;
+    }
+  
+    .separationRight_side {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-top: 0.5rem solid var(--secundary-color);
+      padding-top: 2rem;
+      margin-right: 0rem;
+    }
+    .mobileBotton {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .icon {
+      padding: 0rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .iconup {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      gap: 4rem;
+    }
+  
+    .icondown {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 4rem;
+    }
+  
+    .columnR {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+  
+    .codeItemsUp {
+      display: flex;
+    }
+  
+    .txtCode {
+      margin: 1rem 1rem;
+    }
+  
+    .footerDesc {
+      margin: 2rem;
+    }
+    
   }
 
-  .headerRight_side {
-    padding: 1rem;
-  }
+  @media screen and (max-width: 800px){
 
-  .description {
-    padding: 0rem;
+    @media screen and (min-width: 432px){
+      body {
+        font-size: 1rem;
+        font-weight: 100;
+      }
+    
+      .header {
+        gap: 1rem;
+        margin: 1rem;
+      }
+    
+      .headerRight_side {
+        padding: 1rem 2rem;
+      }
+    
+      .name {
+        font-weight: 100;
+        font-size: 2rem;
+      }
+  
+      .gridContainer {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .description_box {
+        margin: 0rem;
+        padding: 0rem;
+      }
+    
+      .description {
+        font-size: 1rem;
+        font-weight: 100;
+        padding: 0rem;
+      }
+  
+      .leftsidebox {
+        padding: 1rem 0rem 0rem 0rem;
+      }
+  
+      .borderbotton {
+        margin-right: 16rem;
+      }
+    
+      .rightSideText {
+        font-size: 1.5rem;
+      }
+  
+      .txt{
+        padding: 1rem 0rem;
+        font-size: 0.9rem;
+        font-weight: 100;
+        
+      }
+  
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+      }
+    
+      .titleLeftSide {
+        font-size: 1.5rem;
+      }
+    
+      .separationRight_side {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: 0.5rem solid var(--secundary-color);
+        padding-top: 2rem;
+        margin-right: 0rem;
+      }
+  
+      .mobileBotton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+      }
+    
+      .icon {
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+      }
+    
+      .iconup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+      }
+    
+      .icondown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+      }
+    
+      .columnR {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+  
+      .codeItemsUp {
+        display: flex;
+      }
+    
+      .txtCode {
+        margin: 1rem 1rem;
+      }
+    
+      .footerDesc {
+        margin: 2rem;
+      }
+    }
+    
+    @media screen and (max-width: 432px) {
+      body {
+        font-size: 1rem;
+        font-weight: 100;
+      }
+    
+      .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0rem;
+        margin: 1rem;
+      }
+    
+      .headerRight_side {
+        padding: 1rem 2rem;
+        border-top:  0.5rem solid var(--secundary-color);
+      }
+    
+      .name {
+        padding: 0rem;
+        font-weight: 100;
+        font-size: 2rem;
+      }
+  
+      .gridContainer {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .description_box {
+        margin: 0rem;
+        padding: 0rem;
+      }
+    
+      .description {
+        font-size: 1rem;
+        font-weight: 100;
+        padding: 0rem;
+      }
+  
+      .leftsidebox {
+        padding: 1rem 0rem 0rem 0rem;
+      }
+  
+      .borderbotton {
+        margin-right: 10rem;
+      }
+    
+      .rightSideText {
+        font-size: 1.5rem;
+      }
+  
+      .txt{
+        padding: 1rem 0rem;
+        font-size: 0.9rem;
+        font-weight: 100;
+        
+      }
+  
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+      }
+    
+      .titleLeftSide {
+        font-size: 1.5rem;
+      }
+    
+      .separationRight_side {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: 0.5rem solid var(--secundary-color);
+        padding-top: 2rem;
+        margin-right: 0rem;
+      }
+  
+      .mobileBotton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+      }
+    
+      .icon {
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+      }
+    
+      .iconup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+      }
+    
+      .icondown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+      }
+    
+      .columnR {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+  
+      .codeItemsUp {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .txtCode {
+        margin: 0.2rem 1rem;
+      }
+    
+      .footerDesc {
+        margin: 2rem;
+      }
+    }
   }
-
-  .description_box {
-    margin-right: 0rem;
-  }
-
-  .gridContainer {
-    margin: 2rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .borderbotton {
-    margin-right: 38rem;
-  }
-
-  .separationRight_side {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-top: 0.5rem solid var(--secundary-color);
-    padding-top: 2rem;
-    margin-right: 0rem;
-  }
-  .mobileBotton {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .icon {
-    padding: 0rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .iconup {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    gap: 4rem;
-  }
-
-  .iconbot {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 4rem;
-  }
-
-  .columnR {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 1rem;
-  }
-
-  .codeItemsUp {
-    display: flex;
-  }
-
-  .txtCode {
-    margin: 1rem 1rem;
-  }
-
-  .footerDesc {
-    margin: 2rem;
-  }
-}
-
-@media (max-width: 428) {
 }
