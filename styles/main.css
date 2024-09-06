@@ -274,7 +274,7 @@ a:visited {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin: 0rem 12rem 2rem 12rem;
+  margin: 2rem 12rem 2rem 12rem;
   padding-top: 2rem;
   border-top: 0.5rem solid var(--secundary-color);
 }
@@ -283,13 +283,7 @@ a:visited {
   text-align: center;
 }
 
-/*Pixels dos dispositivos:
-1728px: desktop;
-1024px: tablet;
-428: celular;
-*/
-
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1600px) {
 
   @media screen and (min-width: 800px){
     body {
